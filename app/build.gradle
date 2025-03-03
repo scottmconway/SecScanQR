@@ -2,7 +2,6 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 28
-    buildToolsVersion '29.0.3'
     defaultConfig {
         applicationId "de.t_dankworth.secscanqr"
         minSdkVersion 24
@@ -17,8 +16,12 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-    lintOptions {
+    namespace 'de.t_dankworth.secscanqr'
+    lint {
         abortOnError false
+    }
+    buildFeatures {
+        buildConfig true
     }
 }
 

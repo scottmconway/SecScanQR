@@ -27,7 +27,6 @@ public class AboutActivity extends AppCompatActivity {
         String versionName = BuildConfig.VERSION_NAME;
         View aboutPage = new AboutPage(this)
                 .isRTL(false)
-                .enableDarkMode(false)
                 .setImage(R.mipmap.ic_launcher)
                 .setDescription(getResources().getString(R.string.license) + "\n" + getResources().getString(R.string.zxing_license))
                 .addItem(new Element().setTitle("Version " + versionName + " (Build " + versionCode + ")"))
