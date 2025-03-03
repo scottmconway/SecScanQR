@@ -22,7 +22,7 @@ import java.text.SimpleDateFormat;
  * This class is the Room database for the history itself. It returns an instance of an existing history database or return a new instance
  */
 
-@Database(entities = {HistoryEntity.class}, version = 1)
+@Database(entities = {HistoryEntity.class}, version = 1, exportSchema = false)
 public abstract class HistoryDatabase extends RoomDatabase {
 
     private static HistoryDatabase instance;
